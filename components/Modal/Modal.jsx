@@ -12,7 +12,7 @@ export default function Modal() {
 
   // Stripe payment api
   const checkout = async () => {
-    await fetch('http://localhost:3000/api/checkout', {
+    await fetch('https://e-commerce-next-js-website.vercel.app/api/checkout', {
       method: "POST",
       headers:{
         'Content-type': 'application/json'

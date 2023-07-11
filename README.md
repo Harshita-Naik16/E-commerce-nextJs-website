@@ -2,7 +2,7 @@
 
 ## Demo link
 
-Access this live site at: [moviez app](https://moviez-coral.vercel.app/) 
+Access this live site at: [Life Etc.](https://e-commerce-next-js-website.vercel.app/) 
 
 
 ## About the app
@@ -37,6 +37,7 @@ I used..
 - `/app/globals.css`: Stores global and component-specific styles.
 - `/data`: Contains the website products data and helper functions.
 - `CartContext.jsx`: Has the react's useContext hook and holds the overall functioning of cart data throughout our app.
+- `/components/Modal.jsx`: Is the cart component
 
 ## Journey
 - My main goal with this project was to learn the basic working of front-end of an e-commerce website. 
