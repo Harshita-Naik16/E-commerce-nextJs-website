@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import { productsData } from '@/data/productsData'
 import ProductCard from "@/components/ProductCard/ProductCard"
-import Heading from '@/components/heading'
+import Heading from '@/components/Heading'
 import Slider from '@/components/slider/Slider'
 
 export default function Home() {

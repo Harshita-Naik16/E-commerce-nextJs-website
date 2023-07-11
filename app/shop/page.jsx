@@ -1,5 +1,5 @@
 "use client"
-import Heading from "@/components/heading"
+import Heading from "@/components/Heading"
 import styles from "./shop.module.css"
 import ProductCard from "@/components/ProductCard/ProductCard"
 import { useCallback, useState } from "react"
