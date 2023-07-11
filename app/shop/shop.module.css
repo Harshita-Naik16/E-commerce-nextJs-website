@@ -1,0 +1,34 @@
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:end;
+    gap: 2rem;
+    padding:0 0 3rem;
+}
+
+.product__sort{
+    margin-right: 2rem;
+    margin-bottom: -5rem;
+}
+
+.product__sort_label {
+    font-weight: 200;
+}
+
+.product__sort_select {
+    background-color: white;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 100;
+    
+}
+
+@media  screen and (max-width: 650px) {
+    .product__sort{
+        display: block;
+        margin-right: 0rem;
+        margin-bottom: -0rem;
+        text-align: left;
+    }
+}

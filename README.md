@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-commerece website
 
-## Getting Started
+## Demo link
 
-First, run the development server:
+Access this live site at: [moviez app](https://moviez-coral.vercel.app/) 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About the app
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Life Etc. is an online clothing store personal project built with NextJs. This is a responsive website which works on different screen sizes. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
 
-## Learn More
+![homepage](./public/images/homepage.png)
+***
+![cart](./public/images/cart.png)
+***
+![shop](./public/images/shop.png)
+***
+![about](./public/images/about.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I used..
+- NextJS
+- ReactJs
+- Css 
+- stripe: payments 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Folder Structure
 
-## Deploy on Vercel
+- `/app`: Contains the main pages of the application.
+- `/api`: Handles the stripe payment route
+- `/components`: Holds reusable components used across the app.
+- `/public`: Contains images and icons
+- `/lib`: Contains helper functions
+- `/app/globals.css`: Stores global and component-specific styles.
+- `/data`: Contains the website products data and helper functions.
+- `CartContext.jsx`: Has the react's useContext hook and holds the overall functioning of cart data throughout our app.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Journey
+- My main goal with this project was to learn the basic working of front-end of an e-commerce website. 
+- I started out by planning the main page and the number of pages this website might have.
+- Got the design idea from a wix clothing store template since it had similar features which I initially planned with my project.
+- Proceeded by writing the logic and styling it simultaneously.
+- Created separate css modules for each page and components.
+- Learnt about the usage of react hook useContext to pass cart data throughout the app.
+- Brushed upon my pure css skills with this project, since I only used Tailwind for the past few projects.
+- Learnt about the integration of online payments using Stripe payments.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Final thoughts
+ I might add some new features to this website as I learn new things.
+ I really wish to learn and create websites with beautiful scrolling and interactive ui in the future..
+
+
+## Credits
+- [Wix online clothing store template](https://www.wix.com/website-template/view/html/2348?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fonline-store&tpClick=view_button&esi=bb5919bc-f10b-41c6-afcb-4533ffcaf6f2)
+- [Using stripe youtube video by traversy media](https://youtu.be/_8M-YVY76O8)
+
+## contributer
+- [Harshita Naik](https://github.com/Harshita-Naik16)
+
+
+ *Any suggestions are heartly welcomed!*
