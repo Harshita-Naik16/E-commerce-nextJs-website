@@ -18,13 +18,13 @@ const images = [
 ]
 
 export default function Slider() {
-  const [currentIndex, setCurrent] = useState(0)
+  const [count, setCount] = useState(0)
 
   const handleChange = () => {
-    if(currentIndex === images.length - 1){
-        setCurrent(0)
+    if(count === images.length - 1){
+        setCount(0)
     }else {
-        setCurrent(currentIndex + 1)
+        setCount(prev => prev + 1)
     }
   }
 
@@ -32,16 +32,22 @@ export default function Slider() {
     const interval = setInterval(handleChange, 4000)
 
     return () => clearInterval(interval)
-  }, [currentIndex])
+  }, [count])
   
-  
+  function style(index){
+    const styleObj = {
+      left : `${index * 100}%`,
+      transform: `translateX(-${count * 100}%)`
+    }
+    return styleObj
+  }
 
   return (
     <div className={styles.slider__container}>
       {
         images.map((img, index) => (
-            <div key={index} className={`${styles.slider} ${index === currentIndex ? styles.active : ""}`}>
-                <img className={`${styles.slider_img}`} src={img.imgUrl}/>
+            <div key={index} className={`${styles.slider}`} style={style(index)}>
+                <img src={img.imgUrl}/>
             </div>
         ))
       }
@@ -49,7 +55,7 @@ export default function Slider() {
         {
             images.map((item, index) => {
                 return (
-                    <button key={index} className={`${styles.slider__dot} ${index === currentIndex ? styles.active : ""}`} onClick={() => setCurrent(index)}></button>
+                    <button key={index} className={`${styles.slider__dot} ${index === count ? styles.active : ""}`} onClick={() => setCount(index)}></button>
                 )
             })
         }

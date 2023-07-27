@@ -49,7 +49,7 @@ export default function SearchBox() {
                     {
                         searchList?.map(item => (
                             <li key={item.id}>
-                                <Link href={`/product/${item.id}`} className={styles.nav_search__list_item}>
+                                <Link href={`/product/${item.id}`} className={styles.nav_search__list_item} onClick={() => setValue("")}>
                                     <div className={styles.nav__list__img}><img src={item.image} /></div>
                                     <h5>{item.title}</h5>
                                 </Link>
