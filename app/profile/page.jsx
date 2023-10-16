@@ -2,7 +2,7 @@
 import Heading from "@/components/Heading";
 import styles from "./profile.module.css";
 import { useUser } from "@auth0/nextjs-auth0/client";
-import Loader from "@/components/Loader/loader";
+import Loader from "@/components/Loader/Loader";
 
 export default function page() {
   const { user, isLoading } = useUser();
