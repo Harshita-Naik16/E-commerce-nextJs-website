@@ -5,13 +5,15 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 import Loader from "@/components/Loader/loader";
 
 export default function page() {
-  const { user, error, isLoading } = useUser();
-  if (isLoading) return;
+  const { user, isLoading } = useUser();
+
   return (
     <div className={styles.profile__section}>
       <Heading title="PROFILE" />
       {isLoading ? (
-        <Loader />
+        <div className="flex flex-center">
+          <Loader />
+        </div>
       ) : (
         <div>
           <div className={styles.profile__image}>
