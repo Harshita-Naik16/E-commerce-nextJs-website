@@ -10,7 +10,7 @@ const CartContext = createContext({
     addItemsToCart: () => { },
     removeOneFromCart: () => { },
     deleteFromCart: () => { },
-    getSubTotal: () => { },
+    getSubTotal: () => {},
     wishListItems: [],
     itemInWishlist: () => {},
     addToWishList: () => {},

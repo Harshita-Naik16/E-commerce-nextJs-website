@@ -132,12 +132,16 @@
 
 .modal__view_cart {
     width: 60%;
-    color: aliceblue;
+    color: aliceblue !important;
     font-size: 1rem;
-    background-color: rgb(61, 102, 55);
+    background-color: rgb(61, 102, 55) !important;
     margin:1rem auto;
 }
 
+.modal__view_cart a{
+    color: aliceblue !important;
+}
+
 .modal__view_cart:hover {
-    background-color: rgb(100, 134, 95);
+    background-color: rgb(100, 134, 95) !important;
 }

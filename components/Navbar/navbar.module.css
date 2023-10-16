@@ -88,11 +88,18 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0 0.5rem;
 }
 
 .nav__login span {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     font-weight: 300;
+}
+
+.nav__login a {
+    margin: 0 0.5rem;
+    font-weight: 300;
+    color: var(--text-color-light);
 }
 
 .nav__cart {
