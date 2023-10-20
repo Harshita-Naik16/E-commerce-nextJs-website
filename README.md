@@ -25,7 +25,8 @@ I used..
 - NextJS
 - ReactJs
 - Css 
-- stripe: payments 
+- stripe: payments
+- Auth0 
 
 ## Folder Structure
 
@@ -48,6 +49,7 @@ I used..
 - Learnt about the usage of react hook useContext to pass cart data throughout the app.
 - Brushed upon my pure css skills with this project, since I only used Tailwind for the past few projects.
 - Learnt about the integration of online payments using Stripe payments.
+- Learnt Authentication using Auth0.
 
 ## Final thoughts
  I might add some new features to this website as I learn new things.
